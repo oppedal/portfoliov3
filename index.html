@@ -16,15 +16,71 @@
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"
       defer
     ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollToPlugin.min.js"
+      defer
+    ></script>
 
     <script src="/script.js" defer></script>
   </head>
   <body>
     <div class="container">
-      <section id="home">
+      <section class="section" id="home">
         <canvas class="home-img"></canvas>
       </section>
-      <section id="about-me"></section>
+      <section class="section" id="about-me"><h1>About me</h1></section>
+      <section class="section horizontal" id="projects">
+        <div class="project-cards pin-wrap">
+          <div class="animation-wrap to-right">
+            <div class="project-card">
+              <div class="project-img"></div>
+              <h1 class="project-title">Project1</h1>
+              <p class="project-text">Text about project</p>
+              <div class="project-links">
+                <a href="#">Live preview</a>
+                <a href="#">GitHub repo</a>
+              </div>
+            </div>
+            <div class="project-card">
+              <div class="project-img"></div>
+              <h1 class="project-title">Project2</h1>
+              <p class="project-text">Text about project</p>
+              <div class="project-links">
+                <a href="#">Live preview</a>
+                <a href="#">GitHub repo</a>
+              </div>
+            </div>
+            <div class="project-card">
+              <div class="project-img"></div>
+              <h1 class="project-title">Project3</h1>
+              <p class="project-text">Text about project</p>
+              <div class="project-links">
+                <a href="#">Live preview</a>
+                <a href="#">GitHub repo</a>
+              </div>
+            </div>
+            <div class="project-card">
+              <div class="project-img"></div>
+              <h1 class="project-title">Project4</h1>
+              <p class="project-text">Text about project</p>
+              <div class="project-links">
+                <a href="#">Live preview</a>
+                <a href="#">GitHub repo</a>
+              </div>
+            </div>
+            <div class="project-card last">
+              <div class="project-img"></div>
+              <h1 class="project-title">Project5</h1>
+              <p class="project-text">Text about project</p>
+              <div class="project-links">
+                <a href="#">Live preview</a>
+                <a href="#">GitHub repo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section" id="contact"></section>
     </div>
   </body>
 </html>

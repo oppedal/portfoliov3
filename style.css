@@ -40,8 +40,6 @@ li {
 }
 .container {
   height: 100vh;
-  /* overflow-y: scroll; */
-  scroll-snap-type: y mandatory;
 }
 
 /* Home */
@@ -60,4 +58,38 @@ li {
 #about-me {
   height: 100vh;
   background-color: var(--pink);
+}
+/* Projects */
+#projects {
+  width: 100vw;
+  background-color: var(--blue);
+
+  display: grid;
+  place-content: center;
+}
+.project-card {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  justify-content: center;
+  border: 1px solid red;
+  margin-left: 2vw;
+  margin-right: 2vw;
+}
+.last {
+  margin-left: 4rem;
+}
+.horizontal {
+  /* width: fit-content; */
+}
+.project-cards {
+  height: 100vh;
+  width: fit-content;
+  display: flex;
+}
+/* Contact */
+#contact {
+  background-color: var(--yellow);
 }
