@@ -23,7 +23,7 @@ body {
 }
 section {
   height: 100vh;
-  /* scroll-snap-align: start; */
+  scroll-snap-align: start;
 }
 a {
   text-decoration: none;
@@ -38,6 +38,11 @@ li {
   font-size: 2rem;
   margin-top: 1.5rem;
 }
+.container {
+  height: 100vh;
+  /* overflow-y: scroll; */
+  scroll-snap-type: y mandatory;
+}
 
 /* Home */
 
@@ -48,7 +53,7 @@ li {
 }
 .home-img {
   height: 100%;
-  width: 100%;
+  width: 800px;
   margin-inline: auto;
 }
 /* About */

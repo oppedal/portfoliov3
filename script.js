@@ -4,6 +4,7 @@ const html = document.documentElement;
 const canvas = document.querySelector('.home-img');
 const context = canvas.getContext('2d');
 const home = document.getElementById('home');
+const about = document.getElementById('about-me');
 const currentFrame = (index) =>
   `https://nicholai.tech/v2/img/Home4/Home4_${index
     .toString()
@@ -49,10 +50,18 @@ const scrollTheImage = () => {
 ScrollTrigger.create({
   trigger: '#home',
   pin: '#home',
-
   end: '+=1000',
 });
 
 window.addEventListener('scroll', () => {
   scrollTheImage();
 });
+
+let observer = new IntersectionObserver(
+  function (entries) {
+    if (entries[0].isIntersecting === true) scrollToNextPage();
+  },
+  { threshold: [0] }
+);
+
+observer.observe(document.querySelector('#about-me'));
