@@ -38,3 +38,21 @@ li {
   font-size: 2rem;
   margin-top: 1.5rem;
 }
+
+/* Home */
+
+#home {
+  display: grid;
+  place-content: center;
+  height: 100vh;
+}
+.home-img {
+  height: 100%;
+  width: 100%;
+  margin-inline: auto;
+}
+/* About */
+#about-me {
+  height: 100vh;
+  background-color: var(--pink);
+}

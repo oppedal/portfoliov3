@@ -1,14 +1,15 @@
 'use strict:';
+gsap.registerPlugin(ScrollTrigger);
 const html = document.documentElement;
 const canvas = document.querySelector('.home-img');
 const context = canvas.getContext('2d');
 const home = document.getElementById('home');
 const currentFrame = (index) =>
-  `https://nicholai.tech/v2/img/Home2/Home2_${index
+  `https://nicholai.tech/v2/img/Home4/Home4_${index
     .toString()
     .padStart(5, `0`)}.png`;
 
-const frameCount = 53;
+const frameCount = 51;
 
 canvas.height = 800;
 canvas.width = 800;
@@ -45,3 +46,13 @@ const scrollTheImage = () => {
     updateImage(frameIndex + 1);
   });
 };
+ScrollTrigger.create({
+  trigger: '#home',
+  pin: '#home',
+
+  end: '+=1000',
+});
+
+window.addEventListener('scroll', () => {
+  scrollTheImage();
+});
